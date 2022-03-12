@@ -29,6 +29,7 @@ patterns_sub_menu = [
 ```
 ```markdown
 
+### Python Menu
 - Main list of [Prompts, Actions] 
 - Two styles are supported to execute abstracted logic 
 - File names will be run by exec(open("filename.py").read()) 
@@ -64,6 +65,7 @@ def buildMenu(banner, options):
 ```
 ```markdown
 
+### Python Menu
 - def menu
 - using main_menu list:
 - main menu and submenu reference are created [Prompts, Actions]
@@ -104,6 +106,7 @@ def buildMenu(banner, options):
 ```
 ```markdown
 
+### Python Menu
 - validate choice and run
 - execute selection
 - convert to number
@@ -114,4 +117,5 @@ def buildMenu(banner, options):
 ```
 ```markdown
 
+### Python Menu
 - recursion, start menu over again
