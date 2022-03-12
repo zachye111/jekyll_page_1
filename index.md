@@ -9,7 +9,7 @@ You can see the [code used](https://github.com/zachye111/zach_individual_tri3/bl
 Creating a Python menu with data structures and try/except statements - the lazy programmer way.
 
 ```
-`main_menu = [
+main_menu = [
     ["Swaps", "swaps.py"],
     ["Matrix", "matrix.py"],
     ["Fibonacci", "fibonacci.py"],
@@ -25,7 +25,7 @@ sub_menu = [
 patterns_sub_menu = [
     ["Health", "health.py"],
 ]
-` 
+
 ```
 
 - Main list of [Prompts, Actions] 
@@ -34,7 +34,7 @@ patterns_sub_menu = [
 - Function references will be executed directly file.function()
 
 ```
-`def menu():
+def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
     menu_list.append(["Swaps and Matrix", submenu])
@@ -59,7 +59,7 @@ def buildMenu(banner, options):
         print(key, '->', value[0])
 
     choice = input("Type your choice> ")
-` 
+ 
 ```
 
 - def menu
@@ -74,7 +74,7 @@ def buildMenu(banner, options):
 - get user choice
 
 ```
-` try:
+  try:
         choice = int(choice)
         if choice == 0:
             # stop
@@ -98,7 +98,7 @@ def buildMenu(banner, options):
         print(f"Invalid choice: {choice}")
     except TypeError:
         print(f"Not callable {action}")
-` 
+ 
 ```
 
 - validate choice and run
@@ -106,8 +106,7 @@ def buildMenu(banner, options):
 - convert to number
 
 ```
-`  buildMenu(banner, options)
-` 
+   buildMenu(banner, options) 
 ```
 
 - recursion, start menu over again
