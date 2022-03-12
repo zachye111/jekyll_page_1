@@ -8,7 +8,7 @@ You can see the [code used](https://github.com/zachye111/zach_individual_tri3/bl
 
 Creating a Python menu with data structures and try/except statements - the lazy programmer way.
 
-```markdown
+```
 `main_menu = [
     ["Swaps", "swaps.py"],
     ["Matrix", "matrix.py"],
@@ -26,8 +26,6 @@ patterns_sub_menu = [
     ["Health", "health.py"],
 ]
 ` 
-```
-```markdown
 ```
 
 - Main list of [Prompts, Actions] 
@@ -76,7 +74,6 @@ def buildMenu(banner, options):
 - get user choice
 
 ```
-```markdown
 ` try:
         choice = int(choice)
         if choice == 0:
@@ -103,19 +100,14 @@ def buildMenu(banner, options):
         print(f"Not callable {action}")
 ` 
 ```
-```markdown
-```
 
 - validate choice and run
 - execute selection
 - convert to number
 
 ```
-```markdown
 `  buildMenu(banner, options)
 ` 
-```
-```markdown
 ```
 
 - recursion, start menu over again
