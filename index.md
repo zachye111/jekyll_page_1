@@ -36,7 +36,6 @@ patterns_sub_menu = [
 - Function references will be executed directly file.function()
 
 ```
-```markdown
 `def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
@@ -63,8 +62,6 @@ def buildMenu(banner, options):
 
     choice = input("Type your choice> ")
 ` 
-```
-```markdown
 ```
 
 - def menu
