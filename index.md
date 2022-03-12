@@ -17,7 +17,6 @@ Creating a Python menu with data structures and try/except statements - the lazy
     ["MNMS", "mnms.py"]
 ]
 
-# Submenu list
 sub_menu = [
     ["Swaps", "swaps.py"],
     ["Matrix", "matrix.py"],
@@ -28,36 +27,91 @@ patterns_sub_menu = [
 ]
 ` 
 ```
-
-
 ```markdown
 
-- Main list of [Prompts, Actions]
-- Two styles are supported to execute abstracted logic
-- File names will be run by exec(open("filename.py").read())
+- Main list of [Prompts, Actions] 
+- Two styles are supported to execute abstracted logic 
+- File names will be run by exec(open("filename.py").read()) 
 - Function references will be executed directly file.function()
 
-### Jekyll Themes
+```markdown
+`def menu():
+    title = "Function Menu" + banner
+    menu_list = main_menu.copy()
+    menu_list.append(["Swaps and Matrix", submenu])
+    menu_list.append(["Create Task", patterns_submenu])
+    buildMenu(title, menu_list)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zachye111/jekyll_page_1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+def submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, sub_menu)
+def patterns_submenu():
+    title = "Function Submenu" + banner
+    buildMenu(title, patterns_sub_menu)
 
-### Support or Contact
+def buildMenu(banner, options):
+    print(banner)
+    prompts = {0: ["Exit", None]}
+    for op in options:
+        index = len(prompts)
+        prompts[index] = op
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    for key, value in prompts.items():
+        print(key, '->', value[0])
 
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    choice = input("Type your choice> ")
+` 
 ```
+```markdown
+
+- def menu
+- using main_menu list:
+- main menu and submenu reference are created [Prompts, Actions]
+- menu_list is sent as parameter to menuy.menu function that has logic for menu control
+- def submenu
+- using sub menu list above:
+- sub_menu works similarly to menu()
+- header for menu
+- build dictionary
+- get user choice
+
+```markdown
+` try:
+        choice = int(choice)
+        if choice == 0:
+            # stop
+            return
+        try:
+            # try as function
+            action = prompts.get(choice)[1]
+            action()
+        except TypeError:
+            try:  # try as playground style
+                exec(open(action).read())
+            except FileNotFoundError:
+                print(f"File not found!: {action}")
+            # end function try
+        # end prompts try
+    except ValueError:
+        # not a number error
+        print(f"Not a number: {choice}")
+    except UnboundLocalError:
+        # traps all other errors
+        print(f"Invalid choice: {choice}")
+    except TypeError:
+        print(f"Not callable {action}")
+` 
+```
+```markdown
+
+- validate choice and run
+- execute selection
+- convert to number
+
+```markdown
+`  buildMenu(banner, options)
+` 
+```
+```markdown
+
+- recursion, start menu over again
