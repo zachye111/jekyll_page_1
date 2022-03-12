@@ -8,7 +8,7 @@ You can see the [code used](https://github.com/zachye111/zach_individual_tri3/bl
 
 Creating a Python menu with data structures and try/except statements - the lazy programmer way.
 
-```markdown
+
 `main_menu = [
     ["Swaps", "swaps.py"],
     ["Matrix", "matrix.py"],
@@ -27,9 +27,8 @@ patterns_sub_menu = [
 ]
 ` 
 ```
-```markdown
 
-### Python Menu
+
 - Main list of [Prompts, Actions] 
 - Two styles are supported to execute abstracted logic 
 - File names will be run by exec(open("filename.py").read()) 
