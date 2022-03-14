@@ -4,9 +4,11 @@ GitHub page that documents Data Structures project, using code snippets for key 
 
 ### Python Menu
 
-You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/menu.py) in the python menu.
+You can see the [code used](https://replit.com/join/tzbvwmcspg-zachye111) in the python menu.
 
 Creating a Python menu with data structures and try/except statements - the lazy programmer way.
+
+
 
 ```
 main_menu = [
@@ -112,7 +114,7 @@ def buildMenu(banner, options):
 
 ### Animation
 
-You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/animation.py) in the animation.
+You can see the [code used](https://replit.com/join/gwouqhguep-zachye111) in the animation.
 
 A more efficient way of using functions to achieve the same results.
 
