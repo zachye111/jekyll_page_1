@@ -98,7 +98,6 @@ def buildMenu(banner, options):
         print(f"Invalid choice: {choice}")
     except TypeError:
         print(f"Not callable {action}")
- 
 ```
 
 - validate choice and run
@@ -143,7 +142,9 @@ def Animation_print(position):
     print(sp + " ____")
     print(RESET_COLOR)
 ```
+
 - print image with colors and leading spaces
+
 ```
 def animation():
 
