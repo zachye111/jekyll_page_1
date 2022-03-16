@@ -167,7 +167,7 @@ animation()
 - loop purpose is to animate ship sailing
 - call to function with parameter
 
-### Animation
+### Lists
 
 You can see the [code used](https://replit.com/join/jqkaezbjqc-zachye111) in the project.
 
@@ -202,8 +202,10 @@ InfoDb.append({
     "Owns_Cars": ["A", "B", "C"]
 })
 ```
+
 - Hack 1: InfoDB lists.  Build your own/personalized InfoDb with a list length > 3,  create list within a list as illustrated with Owns_Cars
 - List with dictionary records placed in a list
+
 ```
 def print_data(n):
     print(InfoDb[n]["FirstName"], InfoDb[n]["LastName"]) 
@@ -211,6 +213,7 @@ def print_data(n):
     print(", ".join(InfoDb[n]["Owns_Cars"]))  
     print()
 ```
+
 - given an index this will print InfoDb content
 - using comma puts space between values
 - \t is a tab indent, end="" make sure no return occurs
@@ -219,6 +222,7 @@ def print_data(n):
 - hack 2a: def for_loop()
 - hack 2b: def while_loop(0)
 - hack 2c : def recursive_loop(0)
+
 ```
 def tester():
     print("For loop")
@@ -228,11 +232,9 @@ def tester():
     print("Recursive loop")
     recursive_loop(0)  
 
-
 def for_loop():
     for n in range(len(InfoDb)):
         print_data(n)
-
 
 def while_loop(n):
     while n < len(InfoDb):
@@ -240,26 +242,26 @@ def while_loop(n):
         n += 1
     return
 
-
 def recursive_loop(n):
     if n < len(InfoDb):
         print_data(n)
         recursive_loop(n + 1)
     return  
 ```
+
 - requires initial index to start while
 - requires initial index to start recursion
 - for loop iterates on length of InfoDb
 - while loop contains an initial n and an index incrementing statement (n += 1)
 - recursion simulates loop incrementing on each call (n + 1) until exit condition is met
 - exit condition
+
 ```
 def recur_factorial(n):
     if n == 1 or n == 0:
         return 1
     else:
         return n * recur_factorial(n - 1)
-
 
 def tester():
     num = int(input("Enter a number for factorial: "))
@@ -284,6 +286,7 @@ def Fibonacci(n):
 	else:
 		return Fibonacci(n-1) + Fibonacci(n-2)
 ```
+
 - Factorial of a number using recursion
 - this is test driver or code that plays when executed directly, versus import which will not run these statements
 - check if the number is negative
