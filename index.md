@@ -4,13 +4,11 @@ GitHub page that documents Data Structures project, using code snippets for key 
 
 ### Python Menu
 
-You can see the [code used](https://replit.com/join/tzbvwmcspg-zachye111) in the python menu.
+You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/menu.py) in the python menu.
 
 Creating a Python menu with data structures and try/except statements - the lazy programmer way.
 
-https://replit.com/@zachye111/ShamefulRobustRoutes
-
-
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zachye111/menu"></iframe>
 
 ```
 main_menu = [
@@ -116,9 +114,11 @@ def buildMenu(banner, options):
 
 ### Animation
 
-You can see the [code used](https://replit.com/join/gwouqhguep-zachye111) in the animation.
-
 A more efficient way of using functions to achieve the same results.
+
+You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/animation.py) in the animation.
+
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zachye111/random-animation"></iframe>
 
 ```
 ANSI_CLEAR_SCREEN =  lambda: print('\n' * 150)
@@ -173,7 +173,9 @@ animation()
 
 Christmas tree with * s or a pattern.
 
+You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/tree.py) in the project.
 
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zachye111/tree"></iframe>
 
 ```
 def tree(x):
@@ -190,9 +192,11 @@ print("        Here is the Tree.")
 
 ### Lists
 
-You can see the [code used](https://replit.com/join/jqkaezbjqc-zachye111) in the project.
-
 InfoDB lists, InfoDB loops, and Fibonacci.
+
+You can see the [code used](https://github.com/zachye111/zach_individual_tri3/blob/main/lists.py) in the project.
+
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@zachye111/list"></iframe>
 
 ```
 InfoDb = []
