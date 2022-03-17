@@ -169,6 +169,25 @@ animation()
 - loop purpose is to animate ship sailing
 - call to function with parameter
 
+### Tree
+
+Christmas tree with * s or a pattern.
+
+
+
+```
+def tree(x):
+    print("\n".join([f"{'*'*(2* n + 1):^{2*x+1}}" for n in range(x)]))
+def trunk(n):
+    for i in range(n):
+        for j in range(n-1):
+            print('      ', end=' ')
+        print('***')
+tree(15)
+trunk(3)
+print("        Here is the Tree.")
+```
+
 ### Lists
 
 You can see the [code used](https://replit.com/join/jqkaezbjqc-zachye111) in the project.
